@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ValoBot - Your Esports Assistant</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="hero-section">
+        <div class="overlay">
+            <div class="header-content">
+                <h1>ValoBot</h1>
+                <p>Build your Teams with our ValoBot – The ultimate assistant to all your esports queries</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="chat-container">
+        <div class="chat-box">
+            <div class="chat-input" style="display: flex; align-items: center; width: 100%;">
+                <select id="user-input" style="flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 4px; margin-right: 0;">
+                    <option value="" disabled selected>Select the type of team you want</option>
+                    <option value="build-pro-team">Build Pro Team</option>
+                    <option value="build-semi-pro-team">Build Semi-Pro Team</option>
+                    <option value="build-game-changers-team">Build Game Changers Team</option>
+                </select>
+                <button id="send-btn" style="margin-left: 5px; padding: 10px 15px;">Send</button>
+            </div>
+            
+            <!-- Chat messages section where response will appear -->
+            <div class="chat-messages" id="chat-messages">
+                <span class="message-text">RESPONSE</span> <br><br>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="answer-container">
+        <div class="answer-box">
+            <p id="answer-text">Answer will appear here...</p>
+        </div>
+    </div> -->
+
+    <script src="app.js"></script>
+</body>
+</html>
